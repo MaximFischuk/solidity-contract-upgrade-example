@@ -1,0 +1,25 @@
+{
+  "name": "contract-upgradable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/truffle console --network",
+    "build": "./node_modules/.bin/truffle compile",
+    "test": "./node_modules/.bin/truffle test --network test",
+    "compile": "./node_modules/.bin/truffle compile",
+    "remixd": "./node_modules/.bin/remixd -s ./contracts/ --remix-ide https://remix.ethereum.org",
+    "ganache": "./node_modules/.bin/ganache-cli --networkId 5777",
+    "migrate": "./node_modules/.bin/truffle migrate"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.1.0",
+    "remixd": "^0.2.3-alpha.4",
+    "truffle": "^5.1.37"
+  }
+}
